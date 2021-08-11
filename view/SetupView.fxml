@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SetupController">
+   <children>
+      <HBox prefHeight="60.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="77.0" prefWidth="472.0" text="   Welcome To The Polynomial Calculator!">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label alignment="TOP_LEFT" prefHeight="61.0" prefWidth="437.0" text="     Please Select An Operation:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox prefHeight="237.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="buttonEvaluate" mnemonicParsing="false" onAction="#evaluate" prefHeight="50.0" prefWidth="365.0" text="Evaluate a polynomial">
+               <VBox.margin>
+                  <Insets left="12.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="buttonDifferentiate" mnemonicParsing="false" onAction="#differentiate" prefHeight="50.0" prefWidth="366.0" text="Differentiate a polynomial">
+               <VBox.margin>
+                  <Insets left="12.0" top="12.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#add" prefHeight="50.0" prefWidth="367.0" text="Add a polynomial">
+               <VBox.margin>
+                  <Insets left="12.0" top="12.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="buttonMultiply" mnemonicParsing="false" onAction="#multiply" prefHeight="50.0" prefWidth="367.0" text="Multiply a polynomial">
+               <VBox.margin>
+                  <Insets left="12.0" top="12.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <HBox prefHeight="105.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="buttonRoots" mnemonicParsing="false" onAction="#roots" prefHeight="53.0" prefWidth="369.0" text="Find the roots of a polynomial">
+               <HBox.margin>
+                  <Insets left="12.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonQuit" mnemonicParsing="false" onAction="#quit" prefHeight="53.0" prefWidth="133.0" text="Quit application">
+               <HBox.margin>
+                  <Insets left="75.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

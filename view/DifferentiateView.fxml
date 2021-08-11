@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="440.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DifferentiateController">
+   <children>
+      <VBox prefHeight="61.0" prefWidth="511.0">
+         <children>
+            <Label prefHeight="60.0" prefWidth="381.0" text="Enter the polynomial below: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin></Label>
+         </children>
+      </VBox>
+      <TextArea fx:id="userInput" prefHeight="89.0" prefWidth="511.0">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" />
+         </VBox.margin></TextArea>
+      <HBox prefHeight="64.0" prefWidth="511.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="480.0" text="The differentiated polynomial is:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="differentiateLayout" prefHeight="73.0" prefWidth="511.0">
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="114.0" prefWidth="511.0">
+         <children>
+            <Button fx:id="buttonSubmit" mnemonicParsing="false" onAction="#submit" prefHeight="65.0" prefWidth="104.0" text="Submit">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonClear" mnemonicParsing="false" onAction="#clear" prefHeight="65.0" prefWidth="107.0" text="Clear">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonBack" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#back" prefHeight="64.0" prefWidth="109.0" text="Back to menu">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="175.0" right="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</VBox>

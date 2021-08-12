@@ -26,7 +26,7 @@
          </VBox.margin></TextArea>
       <HBox prefHeight="64.0" prefWidth="511.0">
          <children>
-            <Label prefHeight="50.0" prefWidth="193.0" text="The polynomial has:">
+            <Label prefHeight="41.0" prefWidth="140.0" text="The polynomial:">
                <font>
                   <Font size="18.0" />
                </font>
@@ -34,20 +34,55 @@
                   <Insets left="15.0" />
                </HBox.margin>
             </Label>
-            <Label fx:id="numOfRoots" prefHeight="53.0" prefWidth="311.0" />
+            <Label fx:id="polynomialLayout" prefHeight="49.0" prefWidth="357.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
          </children>
          <VBox.margin>
             <Insets top="50.0" />
          </VBox.margin>
       </HBox>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <HBox prefHeight="64.0" prefWidth="511.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="140.0" text="Has:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="numOfRoots" prefHeight="51.0" prefWidth="358.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="77.0" prefWidth="511.0">
          <children>
             <Label alignment="CENTER" prefHeight="86.0" prefWidth="141.0" text="Root = ">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label fx:id="rootValue" prefHeight="86.0" prefWidth="457.0" />
+            <Label fx:id="rootValue1" prefHeight="78.0" prefWidth="414.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="81.0" prefWidth="511.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="58.0" prefWidth="175.0" text="Root = ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="rootValue2" alignment="TOP_LEFT" prefHeight="58.0" prefWidth="448.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
          </children>
       </HBox>
       <HBox prefHeight="114.0" prefWidth="511.0">

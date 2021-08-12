@@ -17,7 +17,7 @@ public class SetupTesterGUI extends Application {
 		FXMLLoader loader = new FXMLLoader();
 		
 		try {
-			VBox root = loader.load(new FileInputStream("src/view/SetupView.fxml"));
+			VBox root = loader.load(new FileInputStream("view/SetupView.fxml"));
 			primaryStage.setScene(new Scene(root, 600, 475));
 		} catch (FileNotFoundException e) {
 			System.out.println("Can't open the FXML file");

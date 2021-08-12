@@ -20,10 +20,27 @@
                </VBox.margin></Label>
          </children>
       </VBox>
-      <TextArea fx:id="userInput" prefHeight="89.0" prefWidth="511.0">
+      <TextArea fx:id="userInput1" prefHeight="95.0" prefWidth="481.0">
          <VBox.margin>
             <Insets left="15.0" right="15.0" />
          </VBox.margin></TextArea>
+      <VBox prefHeight="129.0" prefWidth="511.0">
+         <children>
+            <Label prefHeight="48.0" prefWidth="381.0" text="Enter the value for the unknown: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="userInput2" prefHeight="80.0" prefWidth="511.0">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
       <HBox prefHeight="64.0" prefWidth="511.0">
          <children>
             <Label prefHeight="50.0" prefWidth="480.0" text="The polynomial evaluates to:">

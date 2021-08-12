@@ -43,7 +43,7 @@
       </TextArea>
       <HBox prefHeight="64.0" prefWidth="511.0">
          <children>
-            <Label prefHeight="50.0" prefWidth="480.0" text="The product of the two polynomials is:">
+            <Label prefHeight="46.0" prefWidth="129.0" text="Polnomial #1:">
                <font>
                   <Font size="18.0" />
                </font>
@@ -51,17 +51,47 @@
                   <Insets left="15.0" />
                </HBox.margin>
             </Label>
+            <Label fx:id="polynomial1Layout" prefHeight="53.0" prefWidth="373.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
          </children>
          <VBox.margin>
             <Insets top="20.0" />
          </VBox.margin>
       </HBox>
-      <HBox prefHeight="67.0" prefWidth="511.0">
+      <HBox prefHeight="64.0" prefWidth="511.0">
          <children>
-            <Label fx:id="multiplyLayout" prefHeight="73.0" prefWidth="511.0">
+            <Label alignment="TOP_LEFT" prefHeight="46.0" prefWidth="129.0" text="Polnomial #2:">
+               <font>
+                  <Font size="18.0" />
+               </font>
                <HBox.margin>
-                  <Insets left="15.0" right="15.0" />
+                  <Insets left="15.0" />
                </HBox.margin>
+            </Label>
+            <Label fx:id="polynomial2Layout" alignment="TOP_LEFT" prefHeight="53.0" prefWidth="373.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="64.0" prefWidth="511.0">
+         <children>
+            <Label alignment="TOP_LEFT" prefHeight="41.0" prefWidth="230.0" text="Polnomials product:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="productLayout" alignment="TOP_LEFT" prefHeight="53.0" prefWidth="373.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
             </Label>
          </children>
       </HBox>

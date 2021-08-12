@@ -43,7 +43,7 @@ public class SetupController {
 			Stage stage = (Stage) buttonQuit.getScene().getWindow();
 	    	stage.close();
 			
-			VBox root = loader.load(new FileInputStream("src/view/EvaluateView.fxml"));
+			VBox root = loader.load(new FileInputStream("view/EvaluateView.fxml"));
 			Stage EvaluateStage = new Stage();
 			EvaluateStage.setScene(new Scene(root, 500, 475));
 			EvaluateStage.show();
@@ -65,7 +65,7 @@ public class SetupController {
     		Stage stage = (Stage) buttonQuit.getScene().getWindow();
     		stage.close();
 
-    		VBox root = loader.load(new FileInputStream("src/view/DifferentiateView.fxml"));
+    		VBox root = loader.load(new FileInputStream("view/DifferentiateView.fxml"));
     		Stage EvaluateStage = new Stage();
     		EvaluateStage.setScene(new Scene(root, 500, 475));
     		EvaluateStage.show();
@@ -87,7 +87,7 @@ public class SetupController {
     		Stage stage = (Stage) buttonQuit.getScene().getWindow();
     		stage.close();
 
-    		VBox root = loader.load(new FileInputStream("src/view/AddView.fxml"));
+    		VBox root = loader.load(new FileInputStream("view/AddView.fxml"));
     		Stage EvaluateStage = new Stage();
     		EvaluateStage.setScene(new Scene(root, 500, 475));
     		EvaluateStage.show();
@@ -109,7 +109,7 @@ public class SetupController {
     		Stage stage = (Stage) buttonQuit.getScene().getWindow();
     		stage.close();
 
-    		VBox root = loader.load(new FileInputStream("src/view/MultiplyView.fxml"));
+    		VBox root = loader.load(new FileInputStream("view/MultiplyView.fxml"));
     		Stage EvaluateStage = new Stage();
     		EvaluateStage.setScene(new Scene(root, 500, 475));
     		EvaluateStage.show();
@@ -131,7 +131,7 @@ public class SetupController {
     		Stage stage = (Stage) buttonQuit.getScene().getWindow();
     		stage.close();
 
-    		VBox root = loader.load(new FileInputStream("src/view/RootsView.fxml"));
+    		VBox root = loader.load(new FileInputStream("view/RootsView.fxml"));
     		Stage EvaluateStage = new Stage();
     		EvaluateStage.setScene(new Scene(root, 500, 475));
     		EvaluateStage.show();

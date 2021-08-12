@@ -35,6 +35,10 @@ public class SetupController {
     @FXML
     private Button buttonAdd;
 
+    /**
+     * this method loads the evaluate window
+     * @param event
+     */
     @FXML
     void evaluate(ActionEvent event){
     	FXMLLoader loader = new FXMLLoader();
@@ -45,7 +49,7 @@ public class SetupController {
 			
 			VBox root = loader.load(new FileInputStream("view/EvaluateView.fxml"));
 			Stage EvaluateStage = new Stage();
-			EvaluateStage.setScene(new Scene(root, 500, 475));
+    		EvaluateStage.setScene(new Scene(root, 762, 440));
 			EvaluateStage.show();
 
 		} catch (FileNotFoundException e) {
@@ -57,6 +61,10 @@ public class SetupController {
 		}
     }
 
+    /**
+     * this method loads the differentiate window
+     * @param event
+     */
     @FXML
     void differentiate(ActionEvent event) {
     	FXMLLoader loader = new FXMLLoader();
@@ -67,7 +75,7 @@ public class SetupController {
 
     		VBox root = loader.load(new FileInputStream("view/DifferentiateView.fxml"));
     		Stage EvaluateStage = new Stage();
-    		EvaluateStage.setScene(new Scene(root, 500, 475));
+    		EvaluateStage.setScene(new Scene(root, 762, 440));
     		EvaluateStage.show();
 
     	} catch (FileNotFoundException e) {
@@ -79,6 +87,10 @@ public class SetupController {
     	}
     }
 
+    /**
+     * this method loads the addition window
+     * @param event
+     */
     @FXML
     void add(ActionEvent event) {
     	FXMLLoader loader = new FXMLLoader();
@@ -89,7 +101,7 @@ public class SetupController {
 
     		VBox root = loader.load(new FileInputStream("view/AddView.fxml"));
     		Stage EvaluateStage = new Stage();
-    		EvaluateStage.setScene(new Scene(root, 500, 475));
+    		EvaluateStage.setScene(new Scene(root, 762, 440));
     		EvaluateStage.show();
 
     	} catch (FileNotFoundException e) {
@@ -101,6 +113,10 @@ public class SetupController {
     	}
     }
 
+    /**
+     * this method loads the multiplication window
+     * @param event
+     */
     @FXML
     void multiply(ActionEvent event) {
     	FXMLLoader loader = new FXMLLoader();
@@ -111,7 +127,7 @@ public class SetupController {
 
     		VBox root = loader.load(new FileInputStream("view/MultiplyView.fxml"));
     		Stage EvaluateStage = new Stage();
-    		EvaluateStage.setScene(new Scene(root, 500, 475));
+    		EvaluateStage.setScene(new Scene(root, 762, 440));
     		EvaluateStage.show();
 
     	} catch (FileNotFoundException e) {
@@ -123,6 +139,10 @@ public class SetupController {
     	}
     }
 
+    /**
+     * this method loads the roots window
+     * @param event
+     */
     @FXML
     void roots(ActionEvent event) {
     	FXMLLoader loader = new FXMLLoader();
@@ -133,7 +153,7 @@ public class SetupController {
 
     		VBox root = loader.load(new FileInputStream("view/RootsView.fxml"));
     		Stage EvaluateStage = new Stage();
-    		EvaluateStage.setScene(new Scene(root, 500, 475));
+    		EvaluateStage.setScene(new Scene(root, 762, 440));
     		EvaluateStage.show();
 
     	} catch (FileNotFoundException e) {
@@ -145,6 +165,10 @@ public class SetupController {
     	}
     }
 
+    /**
+     * this method quits and terminates the application
+     * @param event
+     */
     @FXML
     void quit(ActionEvent event) {
     	Stage stage = (Stage) buttonQuit.getScene().getWindow();

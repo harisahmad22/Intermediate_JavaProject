@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="440.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DifferentiateController">
+<VBox prefHeight="440.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DifferentiateController">
    <children>
       <VBox prefHeight="61.0" prefWidth="511.0">
          <children>
@@ -34,7 +34,7 @@
                   <Insets left="15.0" />
                </HBox.margin>
             </Label>
-            <Label fx:id="polynomialLayout" prefHeight="61.0" prefWidth="328.0">
+            <Label fx:id="polynomialLayout" prefHeight="61.0" prefWidth="593.0">
                <font>
                   <Font size="18.0" />
                </font>
@@ -54,7 +54,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label fx:id="differentiateLayout" alignment="TOP_LEFT" prefHeight="84.0" prefWidth="340.0">
+            <Label fx:id="differentiateLayout" alignment="TOP_LEFT" prefHeight="65.0" prefWidth="572.0">
                <font>
                   <Font size="18.0" />
                </font>
@@ -75,7 +75,7 @@
             </Button>
             <Button fx:id="buttonBack" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#back" prefHeight="64.0" prefWidth="109.0" text="Back to menu">
                <HBox.margin>
-                  <Insets bottom="10.0" left="175.0" right="15.0" />
+                  <Insets bottom="10.0" left="400.0" right="15.0" />
                </HBox.margin>
             </Button>
          </children>

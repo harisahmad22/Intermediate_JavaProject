@@ -44,6 +44,13 @@ public class RootsController {
 
     private EssentialCalculations essentials = new EssentialCalculations();
     
+    /**
+     * This method takes in a polynomial from the user and displays back:
+     *  - the polynomial in the correct format
+     *  - the number of roots in the polynomial
+     *  - and the value of those roots if there are any
+     * @param event
+     */
     @FXML
     void submit(ActionEvent event) {
     	int[] poly1 = new int[BasicCalculations.MAX_SIZE];
@@ -164,7 +171,7 @@ public class RootsController {
     	}   	
 
       	String stringPoly1Format = null;
-    	
+   
     	// the calculation for displaying the polynomial layout
     	int max_exponent2 = -1; 
 		for (int index4 = (BasicCalculations.MAX_SIZE - 1); index4 >= 0; index4--) { 
@@ -230,9 +237,11 @@ public class RootsController {
 		String stringNumOfRoots = Integer.toString(essentials.getNum_RealRoots());
 		numOfRoots.setText(stringNumOfRoots);
 		
+		// setting the value of the first root
 		String stringRoot1 = Double.toString(essentials.getRoot_1());
 		rootValue1.setText(stringRoot1);
     	
+		// setting the value of the second root
 		String stringRoot2 = Double.toString(essentials.getRoot_2());
 		rootValue2.setText(stringRoot2);
 		
@@ -240,11 +249,19 @@ public class RootsController {
 		polynomialLayout.setText(stringPoly1Format);
     }
 
+    /**
+     * This method clears all user input in the textArea
+     * @param event
+     */
     @FXML
     void clear(ActionEvent event) {
     	userInput.clear();
     }
     
+    /**
+     * This method closes the current window and takes the user back to the setupView screen (menu screen)
+     * @param event
+     */
     @FXML
     void back(ActionEvent event) {
     	FXMLLoader loader = new FXMLLoader();

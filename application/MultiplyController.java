@@ -42,6 +42,11 @@ public class MultiplyController {
     @FXML
     private Button buttonBack;
     
+    /**
+	 * This method takes in two polynomials from the user and outputs them both in the proper format back to the user,
+     * it also displays the two polynomials back to the user in the proper format as well as the multiplied polynomial      
+     * @param event
+     */
     @FXML
     void submit(ActionEvent event) {
     	int[] poly1 = new int[BasicCalculations.MAX_SIZE];
@@ -382,17 +387,30 @@ public class MultiplyController {
 		        }
 		    }	
 		
+		// setting the text for the label to show the multiplied polynomial layout
 		productLayout.setText(stringProductPolyFormat);
+		
+		// setting the text for the label to show the first inputed polynomial layout
 		polynomial1Layout.setText(stringPoly1Format);
+		
+		// setting the text for the label to show the second inputed polynomial layout
 		polynomial2Layout.setText(stringPoly2Format);
-
     }
     
+    /**
+     * This method clears all user input in the textAreaa
+     * @param event
+     */
     @FXML
     void clear(ActionEvent event) {
     	userInput1.clear();
     	userInput2.clear();
     }
+    
+    /**
+     * This method closes the current window and takes the user back to the setupView screen (menu screen)
+     * @param event
+     */
     @FXML
     void back(ActionEvent event) {
     	FXMLLoader loader = new FXMLLoader();

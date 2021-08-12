@@ -44,7 +44,11 @@ public class EvaluateController {
     
     private EssentialCalculations essentials = new EssentialCalculations();
     
-    
+    /**
+     * This method is responsible for gathering user input from the textArea and then returning
+     * the polynomial inputed in the proper format as well as the evaluated polynomial. 
+     * @param event
+     */
     @FXML
     void submit(ActionEvent event) {
     	int[] poly1 = new int[BasicCalculations.MAX_SIZE];
@@ -81,7 +85,6 @@ public class EvaluateController {
     	
     	
     	
-    	
     	// creating an array just for the exponents(only the odd number values)
     	int[] exponents = new int [(numberInputs.length)];
     	for (int index2 = 0; index2 < inputs.length; index2++) {
@@ -113,7 +116,6 @@ public class EvaluateController {
     	else {
     		x = Integer.parseInt(numbersOnlyX);
     	}
-    	
     	
     	int coefficient = 0;
     	int exponent = 0;
@@ -204,14 +206,23 @@ public class EvaluateController {
 		
 		// setting the text for the label to show the polynomial layout
 		polynomialLayout.setText(stringPoly1Format);
-    }
 
+    }
+    
+    /**
+     * This method clears all user input in the textArea and the textField
+     * @param event
+     */
     @FXML
     void clear(ActionEvent event) {
     	userInput1.clear();
     	userInput2.clear();
     }
     
+    /**
+     * This method closes the current window and takes the user back to the setupView screen (menu screen)
+     * @param event
+     */
     @FXML
     void back(ActionEvent event) {
     	FXMLLoader loader = new FXMLLoader();

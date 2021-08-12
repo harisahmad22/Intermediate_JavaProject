@@ -38,6 +38,11 @@ public class DifferentiateController {
 
     private EssentialCalculations essentials = new EssentialCalculations();
     
+    /**
+     * This method is responsible for displaying the inputed polynomial in the proper format to the user
+     * and it also outputs the differentiated polynomial to the user in the proper format as well.
+     * @param event
+     */
     @FXML
     void submit(ActionEvent event) {
     	int[] poly1 = new int[BasicCalculations.MAX_SIZE];
@@ -109,6 +114,7 @@ public class DifferentiateController {
     		index++;
     	}
     	
+    	// the calculation for deriving the differentiated polynomial
     	for (int index2 = (BasicCalculations.MAX_SIZE - 1); index2 >= 0; index2--) {
 			essentials.setBring_down((poly1[index2] * index2));
 			
@@ -183,7 +189,6 @@ public class DifferentiateController {
 		    }	
   
 		
-		differentiateLayout.setText(stringDiffPolyFormat);
     	String stringPoly1Format = null;
     	
     	// the calculation for displaying the polynomial layout
@@ -247,15 +252,26 @@ public class DifferentiateController {
 		        }
 		    }
 		
-		// setting the text for the label to show the polynomial layout
+		// setting the text for the label to show the differentiated polynomial layout
+		differentiateLayout.setText(stringDiffPolyFormat);
+		
+		// setting the text for the label to show the inputed polynomial layout
 		polynomialLayout.setText(stringPoly1Format);
     }
 
+    /**
+     * This method clears all user input in the textArea
+     * @param event
+     */
     @FXML
     void clear(ActionEvent event) {
     	userInput.clear();
     }
     
+    /**
+     * This method closes the current window and takes the user back to the setupView screen (menu screen)
+     * @param event
+     */
     @FXML
     void back(ActionEvent event) {
     	FXMLLoader loader = new FXMLLoader();

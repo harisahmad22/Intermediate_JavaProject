@@ -45,6 +45,11 @@ public class AddController {
 
     private EssentialCalculations essentials = new EssentialCalculations();
  
+    /**
+     * This method takes in two polynomials from the user and outputs them both in the proper format back to the user,
+     * it also displays the two polynomials back to the user in the proper format as well as the summed polynomial 
+     * @param event
+     */
     @FXML
     void submit(ActionEvent event) {
     	
@@ -117,11 +122,6 @@ public class AddController {
 
     		index++;
     	}
-    	
-    	
-    	
-    	
-    	
     	
     	// obtaining the user input and putting the input into an array split by a new line and a blank space
     	String polynomial2Value = userInput2.getText();    	
@@ -379,18 +379,31 @@ public class AddController {
 		        }
 		    }	
 		
+		// setting the text for the label to show the summed together polynomial layout
 		addLayout.setText(stringSumPolyFormat);
+		
+		// setting the text for the label to show the first inputed polynomial layout
 		polynomial1Layout.setText(stringPoly1Format);
+		
+		// setting the text for the label to show the second inputed polynomial layout
 		polynomial2Layout.setText(stringPoly2Format);
 
     }
     
+    /**
+     * This method clears all user input in the textAreaa
+     * @param event
+     */
     @FXML
     void clear(ActionEvent event) {
     	userInput1.clear();
     	userInput2.clear();
     }
         
+    /**
+     * This method closes the current window and takes the user back to the setupView screen (menu screen)
+     * @param event
+     */
     @FXML
     void back(ActionEvent event) {
     	FXMLLoader loader = new FXMLLoader();

@@ -41,9 +41,9 @@
             </TextField>
          </children>
       </VBox>
-      <HBox prefHeight="64.0" prefWidth="511.0">
+      <HBox prefHeight="95.0" prefWidth="511.0">
          <children>
-            <Label prefHeight="50.0" prefWidth="480.0" text="The polynomial evaluates to:">
+            <Label prefHeight="78.0" prefWidth="141.0" text="The polynomial:">
                <font>
                   <Font size="18.0" />
                </font>
@@ -51,17 +51,30 @@
                   <Insets left="15.0" />
                </HBox.margin>
             </Label>
+            <Label fx:id="polynomialLayout" prefHeight="80.0" prefWidth="362.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
          </children>
          <VBox.margin>
             <Insets top="50.0" />
          </VBox.margin>
       </HBox>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <HBox prefHeight="97.0" prefWidth="511.0">
          <children>
-            <Label fx:id="evaluateLayout" prefHeight="73.0" prefWidth="511.0">
+            <Label alignment="TOP_LEFT" prefHeight="71.0" prefWidth="142.0" text="Evaluates to:">
                <HBox.margin>
                   <Insets left="15.0" right="15.0" />
                </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="evaluateLayout" alignment="TOP_LEFT" prefHeight="71.0" prefWidth="373.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
             </Label>
          </children>
       </HBox>
